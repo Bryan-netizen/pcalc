@@ -62,10 +62,10 @@ void    print_num(double var)
     else
       {
 	long_to_bin_str((unsigned long long)var, work_str);
-	printf("\t%-16.16g", var);
+	printf("\n%-16.16g", var);
 	if (fOctal)
-	  printf("\t0o%-16llo", (unsigned long long)var);
-	printf("\t0x%-16llx", (unsigned long long)var);
-	printf("\t0y%s\n", work_str);
+	  printf("\n0o%-16llo", (unsigned long long)var);
+	printf("\n0x%-16llx", (unsigned long long)var);
+	printf("\n0y%s\n", work_str);
       }
 }
